@@ -1,0 +1,30 @@
+Source: node-errno
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends:
+ debhelper-compat (= 13)
+ , node-prr <!nocheck>
+ , node-tape <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.5.1
+Homepage: https://github.com/rvagg/node-errno
+Vcs-Git: https://salsa.debian.org/js-team/node-errno.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-errno
+Rules-Requires-Root: no
+
+Package: node-errno
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs (>= 4.7)
+ , node-prr
+Description: libuv errno details exposed - Node.js module
+ errno is a Node.js module which exposes more details of libuv errors.
+ .
+ When you need more details about Node.js errors, errno provides the mappings
+ directly from libuv so you can use them in your code.
+ .
+ Node.js is an event-based server-side JavaScript engine.

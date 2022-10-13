@@ -1,0 +1,65 @@
+node-errno (1.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Use dh-sequence-nodejs
+  * New upstream version 1.0.0
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 07 Jan 2021 09:26:25 +0100
+
+node-errno (0.1.7-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Remove useless build dependency to node-request (Closes: #958685)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 01 Jun 2020 15:42:58 +0200
+
+node-errno (0.1.7-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 10 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Change priority extra to priority optional.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * New upstream version 0.1.7
+  * Remove patch
+  * Embed error-stack-parser and stackframe for test only
+  * Use pkg-js-tools auto test & install
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 15 Jan 2020 11:32:41 +0100
+
+node-errno (0.1.4-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fix vcs urls
+  * fix-tests.patch: Fix failing tests
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 04 May 2017 15:01:45 +0530
+
+node-errno (0.1.1-1) unstable; urgency=low
+
+  [ Andrew Kelley ]
+  * Initial release (Closes: #753326)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 13 Apr 2017 13:40:31 +0530
