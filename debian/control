@@ -6,10 +6,10 @@ Uploaders: Pirate Praveen <praveen@debian.org>
 Testsuite: autopkgtest-pkg-nodejs
 Build-Depends:
  debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , node-prr <!nocheck>
  , node-tape <!nocheck>
- , dh-sequence-nodejs
-Standards-Version: 4.5.1
+Standards-Version: 4.6.0
 Homepage: https://github.com/rvagg/node-errno
 Vcs-Git: https://salsa.debian.org/js-team/node-errno.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-errno
@@ -19,8 +19,9 @@ Package: node-errno
 Architecture: all
 Depends:
  ${misc:Depends}
- , nodejs (>= 4.7)
  , node-prr
+ , nodejs:any
+Multi-Arch: foreign
 Description: libuv errno details exposed - Node.js module
  errno is a Node.js module which exposes more details of libuv errors.
  .
